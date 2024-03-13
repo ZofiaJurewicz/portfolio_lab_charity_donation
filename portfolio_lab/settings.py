@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'HOST': 'localhost',
         'PORT': '5433',
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'charity_donation',
         'USER': 'postgres',
         'PASSWORD': 'coderslab',
