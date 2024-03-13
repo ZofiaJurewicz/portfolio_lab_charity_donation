@@ -12,8 +12,8 @@ class Category(models.Model):
 class Institution(models.Model):
     CHOICES = [
         ('fundacja', 'Fundacja'),
-        ('organizacja pozarządowa', 'Organizacja pozarządowa'),
-        ('zbiórka lokalna', 'Zbiórka lokalna')
+        ('organizacja pozarzadowa', 'Organizacja pozarzadowa'),
+        ('zbiorka lokalna', 'Zbiorka lokalna')
     ]
     name = models.CharField(max_length=255)
     description = models.TextField()
@@ -22,6 +22,7 @@ class Institution(models.Model):
 
     def __str__(self):
         return f"{self.name} {self.description} {self.category}"
+
 
 class Donation(models.Model):
     quantity = models.IntegerField(help_text='Podaj liczbę worków')
