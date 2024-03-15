@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'charity_donation_app'
+    'charity_donation_app',
 ]
+
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+LOGIN_REDIRECT_URL = 'landing_page'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
